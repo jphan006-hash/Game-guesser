@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Word Guesser</title>
+    <title>Number Guesser Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-container">
-        <h1>AI Word Guesser</h1>
-        <p id="word-display"></p>
-        <p id="message-area">Enter a letter to guess the word.</p>
-        <input type="text" id="guess-input" maxlength="1">
-        <button id="submit-guess">Guess</button>
-        <button id="get-hint">Get Hint</button>
-        <p id="attempts-left">Attempts left: 6</p>
-        <p id="hint-area"></p>
+    <div class="container">
+        <h1>Guess the Number!</h1>
+        <p>I have picked a number between 1 and 100. Can you guess it?</p>
+        <input type="number" id="guessInput" min="1" max="100">
+        <button onclick="checkGuess()">Submit Guess</button>
+        <p id="message"></p>
+        <p>Guesses remaining: <span id="guessesLeft">10</span></p>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
